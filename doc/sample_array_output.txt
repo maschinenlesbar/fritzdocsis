@@ -1,0 +1,68 @@
+Array
+(
+    [0] => Array
+        (
+            [docsIfDownChannelId] => 3
+            [docsIfDownChannelFrequency] => 634000000
+            [docsIfDownChannelPower] => 62
+            [docsIfSigQCorrecteds] => 1663818
+            [docsIfSigQUncorrectables] => 921
+            [docsIf3SignalQualityExtRxMER] => 335
+            [docsIfDownChannelInterleave] => 0.32 ms
+            [docsIfDownChannelModulation] => QAM256
+        )
+
+    [1] => Array
+        (
+            [docsIfDownChannelId] => 48
+            [docsIfDownChannelFrequency] => 642000000
+            [docsIfDownChannelPower] => 60
+            [docsIfSigQCorrecteds] => 998536
+            [docsIfSigQUncorrectables] => 996
+            [docsIf3SignalQualityExtRxMER] => 337
+            [docsIfDownChannelInterleave] => 0.32 ms
+            [docsIfDownChannelModulation] => QAM256
+        )
+
+    [2] => Array
+        (
+            [docsIfDownChannelId] => 49
+            [docsIfDownChannelFrequency] => 626000000
+            [docsIfDownChannelPower] => 68
+            [docsIfSigQCorrecteds] => 2028321
+            [docsIfSigQUncorrectables] => 998
+            [docsIf3SignalQualityExtRxMER] => 333
+            [docsIfDownChannelInterleave] => 0.32 ms
+            [docsIfDownChannelModulation] => QAM256
+        )
+
+    [3] => Array
+        (
+            [docsIfDownChannelId] => 50
+            [docsIfDownChannelFrequency] => 618000000
+            [docsIfDownChannelPower] => 65
+            [docsIfSigQCorrecteds] => 2414376
+            [docsIfSigQUncorrectables] => 964
+            [docsIf3SignalQualityExtRxMER] => 333
+            [docsIfDownChannelInterleave] => 0.32 ms
+            [docsIfDownChannelModulation] => QAM256
+        )
+
+)
+Array
+(
+    [0] => Array
+        (
+            [docsIfUpChannelId] => 4
+            [docsIfUpChannelType] => ATDMA
+            [docsIfUpChannelPower] => 488
+        )
+
+    [1] => Array
+        (
+            [docsIfUpChannelId] => 80
+            [docsIfUpChannelType] => ATDMA
+            [docsIfUpChannelPower] => 488
+        )
+
+)

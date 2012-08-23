@@ -1,0 +1,7 @@
+apt-get install php5-cli php5-curl
+
+Set variables in .php file and chmod 700
+
+Run 
+	fritzdocsis_.php suggest
+!
