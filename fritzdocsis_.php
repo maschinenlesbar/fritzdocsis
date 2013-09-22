@@ -1,8 +1,8 @@
 #!/usr/bin/php
 <?php
 // Configure me hard!
-$password="YouPassword";
-$fritzbox_ip="fritz.box";
+// Please configure Fritz!Box Login Data in /lib/fritzbox_user.conf.php
+
 $tmpFile="/tmp/fritzdocsis.db.";
 $tmpFileMaxAge="60";
 
@@ -13,7 +13,7 @@ require_once(__DIR__."/lib/lua_parser.class.php");
 // Check if we have to do a new DOCSIS query
 if(!file_exists($tmpFile."downstream") || (filemtime($tmpFile."downstream") < time() - $tmpFileMaxAge)) {
 	// Get us a new fritzbox handler
-	$fritz = new fritzbox_api($password, $fritzbox_ip);
+	$fritz = new fritzbox_api();
 	/*
 	// Refresh the Page
 	$params = array(
