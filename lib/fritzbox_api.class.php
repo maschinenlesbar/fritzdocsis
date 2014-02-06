@@ -149,6 +149,7 @@ class fritzbox_api {
     if ( $this->config->getItem('enable_remote_config') )
     {
       curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+      curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
       // support for pre FRITZ!OS 5.50 remote config
       if ( !$this->config->getItem('use_lua_login_method') )
       {
@@ -193,6 +194,7 @@ class fritzbox_api {
     if ( $this->config->getItem('enable_remote_config') )
     {
       curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+      curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
       // support for pre FRITZ!OS 5.50 remote config
       if ( !$this->config->getItem('use_lua_login_method') )
       {
