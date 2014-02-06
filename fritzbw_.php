@@ -94,7 +94,6 @@ $mode=$selector[1];
 */
 if($mode=="received" && !empty($argv[1])){
 	if($argv[1] == "config") {
-	echo "host_name stuttgart.sbuehl.com\n";
 	echo "graph_title FritzBox Bandwidth - Received\n";
 	echo "graph_vlabel Bandwidth"."\n";
 	echo "graph_scale no"."\n";
@@ -112,7 +111,6 @@ if($mode=="received") {
 */
 if($mode=="sent" && !empty($argv[1])){
         if($argv[1] == "config") {
-	echo "host_name stuttgart.sbuehl.com\n";
 	echo "graph_title FritzBox Bandwidth - Sent\n";
 	echo "graph_vlabel Bandwidth"."\n";
 	echo "graph_scale no"."\n";
@@ -129,7 +127,6 @@ if($mode=="sent") {
 */
 if($mode=="both" && !empty($argv[1])){
         if($argv[1] == "config") {
-	echo "host_name stuttgart.sbuehl.com\n";
 	echo "graph_title FritzBox Bandwidth\n";
 	echo "graph_vlabel Bandwidth"."\n";
 	echo "graph_scale yes"."\n";
