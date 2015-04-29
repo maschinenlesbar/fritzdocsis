@@ -9,6 +9,7 @@ $tmpFileMaxAge="60";
 // NO NEED TO EDIT BELOW HERE!
 require_once(__DIR__."/lib/fritzbox_api.class.php");
 require_once(__DIR__."/lib/lua_parser.class.php");
+require_once(__DIR__."/lib/sbLib.php");
 
 function lowhigh($l,$h) 
 { 
@@ -27,18 +28,8 @@ if(!file_exists($tmpFile) || (filemtime($tmpFile) < time() - $tmpFileMaxAge)) {
 	$output = $fritz->doGetRequest($params);
 	// Disconnect from the Webinterface
 	$fritz = null;
-	// DISCLAIMER: Now comes the funny part!
-	// 1. AVM enclosed a LUA table in <code> tags. First we get the LUA table out!
-	$pattern='/.*\[".*"\].=.".*",/';
-	$test=preg_match_all($pattern,$output,$out);
-	$luaTable="QUERIES ={\n";
-	foreach($out[0] as $luaLine) {
-		$luaTable.=$luaLine."\n";
-	}
-	$luaTable.="}";
-	// 2. Then we parse the LUA table to an array using a parser for World of Warcraft (it's everywhere, mh?)
-	$lp=new WLP_Parser($luaTable);
-	$dat=$lp->toArray();
+
+	$dat = formatLua($output);
 	
 	// Heute empfangen 
 	$high=$dat["QUERIES"]["inetstat:status/Today/BytesReceivedHigh"];
