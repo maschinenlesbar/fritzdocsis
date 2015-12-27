@@ -2,15 +2,14 @@ FritzDOCSIS
 ============
 This PHP script glues together three components to provide Trending, Monitoring and Graphing of
 Fritz!Box DOCSIS Information obtainable only from the WebUI. This Plugin was developed for
-the Fritz!Box 6360 with Unitymedia branding but is known to work for Kabel-BW and Kabel Deutschland
-as well.
+the Fritz!Box 6360 with Unitymedia branding but is known to work with other AVM cable devices too.
 
 This script uses a library from Gregor Nathanael Meyer <Gregor [at] der-meyer.de>.
 Also used is a library for working with World of Warcraft LUA files from  david.stangeby@gmail.com.
 
 Requirements
 ------------
-`apt-get install php5-cli php5-curl`
+This code requires PHP5 / PHP7 and the PHP `curl` extension.
 
 Configuration
 -------------
